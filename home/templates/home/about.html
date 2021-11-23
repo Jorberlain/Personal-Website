@@ -1,0 +1,75 @@
+<!DOCTYPE html> {% extends "home/base.html" %} {% block title %} About {% endblock %} {% block content %} {% load static %}
+
+<body>
+    <!-- Start about Area -->
+    <section class="section-gap info-area" id="about">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-40 col-lg-8">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Zhiqi Peng</h1>
+                        <p>Love traveling, reading and programming.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-info row mt-40">
+                <div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
+                    <div class="info-thumb">
+                        <img src="{% static 'img/about-img.jpg' %}" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 no-padding info-rigth">
+                    <div class="info-content">
+                        <h2 class="pb-30">Personal information <br/></h2>
+                        <p>
+                            From Zhanjiang City, Guangdong Province, China
+                            <br/> Student of Sun Yat-sen University.
+                            <br/> Major in computer science
+                        </p>
+
+                        <p>
+                            <br/> E-mail: pengzhq3@mail2.sysu.edu.cn
+                            <br/> <a href="https://www.github.com/Jorberlain">Github: Jorberlain</a> &&
+                            <a href="{% url 'blog:blog_index' %}">Blog: Jorberlain's Blog</a>
+                        </p>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End about Area -->
+
+    <hr/>
+
+    <!-- <section class="faq-area section-gap" id="faq">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-60 col-lg-8">
+                    <div class="title">
+                        <h1 class="mb-10">Frequently Asked Questions</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-content">
+                <div class="single-faq">
+                    <h2 class="text">
+                        What is the name <i>schnee</i> means?
+                    </h2>
+                    <p>
+                        In German, schnee means snow. I just like snow's white and pure.
+                    </p>
+                </div>
+                <div class="single-faq">
+                    <h2 class="text">
+                        Favorite color?
+                    </h2>
+                    <p>
+                        Cerulean > White > Auratus
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+</body>
+{% endblock content %}
